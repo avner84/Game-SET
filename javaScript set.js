@@ -169,7 +169,7 @@ function putCards() {
             subArray.splice(card, 1);
 
             const image = document.createElement('img');
-            image.src = "images/" + displayedCards[displayedCards.length - 1].fileName + ".jpg";
+            image.src = "https://raw.githubusercontent.com/avner84/Game-SET/main/Images/" + displayedCards[displayedCards.length - 1].fileName + ".jpg";
             image.id = displayedCards[displayedCards.length - 1].fileName;
             image.style.border = "3px purple solid";
             image.addEventListener("click", addOrRemoveToSelected);
