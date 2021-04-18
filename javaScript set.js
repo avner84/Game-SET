@@ -229,11 +229,6 @@ function checkIfPossible() {
 
                 if (checkingCards(displayedCards[i], displayedCards[j], displayedCards[k])) {
 
-                    console.log(displayedCards[i]);
-                    console.log(displayedCards[j]);
-                    console.log(displayedCards[k]);
-                    console.log("It's possible");
-
                     if (selectedCardByComputerArr.length > 0) {
 
                         selectedCardByComputerArr.splice(0, selectedCardByComputerArr.length);
@@ -252,9 +247,6 @@ function checkIfPossible() {
                 }
 
                 if ((i === displayedCards.length - 3) && (j === displayedCards.length - 2) && (k === displayedCards.length - 1) && (!checkingCards(displayedCards[i], displayedCards[j], displayedCards[k]))) {
-
-                    console.log("i: " + i + "; j: " + j + "; k:" + k);
-                    console.log("It's not possible");
 
                     if (subArray.length > 0) {
 
